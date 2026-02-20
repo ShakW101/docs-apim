@@ -34,7 +34,7 @@ Follow the instructions below to configure Asgardeo as a third-party Key Manager
 
         [![asgardeo application api authorization]({{base_path}}/assets/img/administer/asgardeo-application-api-authorization.png)]({{base_path}}/assets/img/administer/asgardeo-application-api-authorization.png)
 
-    2. In the popped up window, select the Management API **`OAuth DCR API`** as the **API Resource**, **`Select All`** for **Authorized Scopes**, and click on **Finish**.  
+    2. In the popped-up window, select the Management API **`OAuth DCR API`** as the **API Resource**, **`Select All`** for **Authorized Scopes**, and click on **Finish**.  
 
         [![asgardeo authorize dcr api]({{base_path}}/assets/img/administer/asgardeo-authorize-dcr-api.png)]({{base_path}}/assets/img/administer/asgardeo-authorize-dcr-api.png)
 
@@ -90,7 +90,7 @@ Follow the instructions below to configure Asgardeo as a third-party Key Manager
         | Asgardeo Roles Endpoint                     | `https://api.asgardeo.io/t/{ORGANIZATION-NAME}/scim2/v2/Roles`        |
 
 
-    7. Asgardeo issues Opaque tokens by default. Under **Advanced Configurations**, set the **Token Validation Method** to **Use introspect** in order to validate these tokens. 
+    7. Asgardeo issues Opaque tokens by default. Under **Advanced Configurations**, set the **Token Validation Method** to **Use introspect** to validate these tokens. 
     
         !!! Tip 
             This default behavior can be modified. Refer to the section below to configure Asgardeo to issue JWT tokens instead.
@@ -151,9 +151,9 @@ The scopes required in the API must be mirrored in Asgardeo. The following steps
 3. Create a new **Scope** (or skip this step and select an existing one)
 
 4. Assign the scope to the required API resource:
-- Navigate to the **Resources** section of the API
-- Add the scope to the required resource.
-- Save the API
+    1. Navigate to the **Resources** section of the API
+    2. Add the scope to the required resource.
+    3. Save the API
 
 Saving the API triggers WSO2 API Manager to propagate the scope to Asgardeo.  
 
@@ -161,7 +161,7 @@ Saving the API triggers WSO2 API Manager to propagate the scope to Asgardeo.
     The **Resources** section of an **API** is equivalent to the **Tools** section of an **MCP Server**. The steps to create and assign scopes to a tool of an MCP Server are similar to the steps mentioned above.
 
 !!! warning
-    Ensure that no scope name begins with the word `internal`. For example, `internal_order_management` is not permitted. Asgardeo does not allow user defined scope names with this prefix.
+    Ensure that no scope name begins with the word `internal`. For example, `internal_order_management` is not permitted. Asgardeo does not allow user-defined scope names with this prefix.
 
 #### What Happens Internally
 
