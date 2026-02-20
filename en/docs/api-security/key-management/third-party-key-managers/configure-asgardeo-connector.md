@@ -193,7 +193,7 @@ Only scopes **explicitly allowed** here can be requested in access token request
 
 Once scopes are authorized, the application developer can request access tokens. These steps can be completed by the **Application Developer**
 
-1. Use the OAuth application credentials to request a token. This can be done from WSO2 API Manager itself or using a cURL command as shown in WSO2 API Manager.
+1. Use the OAuth application credentials to request a token. This can be done from WSO2 API Manager itself or using a cURL command as shown in the Developer Portal.
 2. Include the required scopes in the request. 
 
 If the scope is authorized, Asgardeo issues an access token containing the requested scope
